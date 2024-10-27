@@ -12,6 +12,7 @@ function App() {
     let todoString = localStorage.getItem("todos");
     if (todoString) {
       let todos = JSON.parse(todoString);
+      
       setTodos(todos);
     }
   }, []);
